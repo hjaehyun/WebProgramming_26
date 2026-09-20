@@ -1,0 +1,606 @@
+<!-- ===== back_image1.html ===== -->
+<html>
+	<head>
+		<style>
+			body{background-image: url('back1.jpg');}
+		</style>
+	</head>
+	<body>
+		<h1>삶이 그대를 속일지라도</h1>
+		<p>삶이 그대를 속일지라도 슬퍼하거나 노하지 말아라.
+			... 지나가 버린 것 그리움이 되리니.
+		</p>
+	</body>
+</html>
+
+<!-- ===== back_image2.html ===== -->
+<html>
+	<head>
+        <style>
+            body{background-image: url('back.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 150px 150px;}
+        </style>
+	</head>
+	<body>
+        <p>이미지는 한번만 표시되고 위치가 고정되어 있다.</p>
+	</body>
+</html>
+
+<!-- ===== border_image.html ===== -->
+<html>
+	<head>
+		<style>
+			div{border: 30px solid transparent;
+			width: 300px; height: 50px;
+			border-image: url(border.png) 30 30 round;}
+		</style>
+	</head>
+	<body>
+		<div>경계 이미지가 반복되면서 그려진다. </div>
+	</body>
+</html>
+
+<!-- ===== border_round.html ===== -->
+<html>
+	<head>
+		<style>
+			div { border: 2px solid red;
+			border-radius: 25px;}
+		</style>
+	</head>
+	<body>
+		<div>border-radius 속성을 사용하면 둥근 경계선을 만들 수 있습니다.</div>
+	</body>
+</html>
+
+<!-- ===== border_style.html ===== -->
+<html>
+    <body>
+        <p style="border-style: none">none.</p>
+        <p style="border-style: dotted">dotted</p>
+        <p style="border-style: dashed">dashed</p>
+        <p style="border-style: solid">solid</p>
+        <p style="border-style: groove">groove</p>
+        <p style="border-style: ridge">ridge</p>
+        <p style="border-style: inset">inset</p>
+        <p style="border-style: outset">outset</p>
+    </body>
+</html>
+
+<!-- ===== border_width.html ===== -->
+<html>
+    <head>
+        <style>
+            p.thick{border-style: solid;
+            border-width: thick;
+            border-color: green;}
+            p.medium{border-style: solid;
+            border-width: medium;
+            border-color: red;}
+            p.thin{border-style: solid;
+            border-width: 1px;
+            border-color: blue;}
+        </style>
+    </head>
+    <body>
+        <p class="thick">경계선이 thick으로 설정되었음</p>
+        <p class="medium">경계선이 medium으로 설정되었음</p>
+        <p class="thin">경계선이 1px으로 설정되었음</p>
+    </body>
+</html>
+
+<!-- ===== box_model.html ===== -->
+<html>
+	<head>
+		<style>
+			div.test{background-color: yellow;
+			width: 200ps; padding: 10px;
+			border: 5px solid red; margin: 20px;}
+		</style>
+	</head>
+	<body>
+		<div class="test">이것은 div 요소로서 전체 폭은 270픽셀이다.</div>
+	</body>
+</html>
+
+<!-- ===== css_matri.html ===== -->
+<html>
+	<head>
+
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== css_opacity.html ===== -->
+<html>
+	<head>
+		<style>
+			img{opacity: 0.4;}
+			img:hover{opacity: 1.0;}
+		</style>
+	</head>
+	<body>
+		<h1>Opacity 속성</h1>
+		<img src="lion.png" width="150" height="120" alt="lion">
+		<img src="audio.png" width="150" height="120" alt="audio">
+	</body>
+</html>
+
+<!-- ===== css_skew.html ===== -->
+<html>
+	<head>
+		<style>
+			div{width: 50px; height: 50px; background-color: yellow;
+			border: 1px solid black; text-align: center;}
+			div#box2{transform: skew(30deg,20deg); background-color: blue;}
+			div#box2{transform: matrix(0.9,0.5,-0.5,0.9,0,0); background-color: blue;}
+		</style>
+	</head>	
+	<body>
+		<div id="box1">Box1</div>
+		<div id="box2">Box2</div>
+	</body>
+</html>
+
+<!-- ===== css_table.html ===== -->
+<html>
+	<head>
+		<style>
+			table, td, th{border: 1px solid blue;}
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr> <th>학번</th> <th>이름</th> 
+				<th>성적</th> <th>학점</th></tr>
+			</thead>
+			<tbody>
+				<tr> <td>1</td> <td>Bill</td> <td>98</td> <td>A+</td> </tr>
+				<tr> <td>2</td> <td>Steve</td> <td>89</td> <td>B+</td> </tr>
+				<tr> <td>3</td> <td>Larry</td> <td>93</td> <td>A-</td> </tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+
+<!-- ===== css_table_align.html ===== -->
+<html>
+	<head>
+        <style>
+            table,td,th{border: 1px solid blue;}
+            table{width: 100%;}
+            td{text-align: center;}
+        </style>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== css_table_alt.html ===== -->
+<html>
+	<head>
+		<style>
+			table{border-collapse: collapse;}
+			td,th{border-bottom: 1px solid green;}
+			th{background-color: green; color: white;}
+			tr:nth-child(even){background-color: bisque;}
+			tr:hover{background-color: brown; color: white;}
+		</style>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== css_table_back.html ===== -->
+<html>
+	<head>
+		<style>
+			td,th{color: white;
+			background-color: green;}
+		</style>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== css_table_caption.html ===== -->
+<html>
+	<head>
+		<style>
+			table{border-collapse: collapse;}
+			td,th{border-bottom: 1px solid green; width: 100px;}
+			th{background-color: green; color: white;}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>기말고사 성적 리스트</caption>
+		</table>
+	</body>
+</html>
+
+<!-- ===== css_table_coll.html ===== -->
+<html>
+	<head>
+		<style>
+			table{border-collapse: collapse;}
+			table,th,td{border: 1px solid blue;}
+		</style>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== css_table_color.html ===== -->
+<html>
+	<head>
+		<style>
+			table{border-collapse: collapse;}
+			td,th{border-bottom: 1px solid green; width: 100px;}
+			th{background-color: green; color: white;}
+		</style>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== css_table_size.html ===== -->
+<html>
+	<head>
+		<style>
+			table,td,th{border: 1px solid blue;}
+			table{width: 100%;}
+			th{height: 30px;}
+		</style>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== css_transiate.html ===== -->
+<html>
+	<head>
+		<style>
+			div{width: 50px; height: 50px; background-color: yellow;
+			border: 1px solid black; text-align: center;}
+			div#box2{transform: translate(100px,0px); background-color: blue;}
+			div#box3{transform: scale(1.2, 1.2); background-color: red;}
+			div#box4{transform: rotate(30deg); background-color: green;}
+		</style>
+	</head>
+	<body>
+		<div id="box1">Box1</div>
+		<div id="box2">Box2</div>
+		<div id="box3">Box3</div>
+		<div id="box4">Box4</div>
+	</body>
+</html>
+
+<!-- ===== css_transition.html ===== -->
+<html>
+	<head>
+		<style>
+			div{width: 100px; height: 50px; border: 1px solid black;
+			background: yellow; transition: width 5s;}
+			div:hover{width: 200px;}
+		</style>
+	</head>
+	<body>
+		<div>마우스를 올려보세요.</div>
+	</body>
+</html>
+
+<!-- ===== css_transition1.html ===== -->
+<html>
+	<head>
+		<style>
+			p{width: 100px; height: 50px; border: 1px solid black; background: yellow; 
+			transition: width 5s height 5s border 5s -webkit-transform 5s;}
+		</style>
+	</head>
+	<body>
+		<p>마우스를 올려보세요.</p>
+	</body>
+</html>
+
+<!-- ===== css_visibility.html ===== -->
+<html>
+	<head>
+        <style>
+            #a{visibility: hidden; border: 1px dotted red;}
+            #b{visibility: visible; border: 1px dotted red;}
+        </style>
+	</head>
+	<body>
+		<img src="lion.png" width="150" height="120" alt="lion">
+		<img src="audio.png" width="150" height="120" alt="audio">
+	</body>
+</html>
+
+<!-- ===== elem_size.html ===== -->
+<html>
+	<head>
+		<style>
+			#target1{width: 100px; height: 50px; 
+			background-color: yellow;}
+			#target2{width: 100px; height: 50px;
+			background-color: lightgreen;}
+		</style>
+	</head>
+	<body>
+		<p id="target1">이것은 p요소입니다.</p>
+		<div id="target2">이것은 div요소입니다.</div>
+	</body>
+</html>
+
+<!-- ===== index.html ===== -->
+<html>
+	<head>
+
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="index.html">News</a></li>
+				<li><a href="index.html">My Account</a></li>
+				<li><a href="index.html">Contacts</a></li>
+			</ul>
+		</nav>
+		<aside id="left">
+			<h4>카테고리</h4>
+			<ul>
+				<li><a target="iframe1" href="computer.html">컴퓨터</a></li>
+				<li><a target="iframe1" href="clothing.html">의류</a></li>
+				<li><a target="iframe1" href="music.html"></a>음악</li>
+				<li><a target="iframe1" href="movie.html"></a>영화</li>
+				<li><a target="iframe1" href="computer.html"></a>스포츠/레저</li>
+				<li><a target="iframe1" href="computer.html"></a>가구/인테리어</li>
+				<li><a target="iframe1" href="computer.html"></a>식품</li>
+			</ul>
+		</aside>
+	</body>
+</html>
+
+<!-- ===== input1.html ===== -->
+<html>
+	<head>
+		<style></style>
+	</head>
+	<body>
+		<h2>상품 평</h2>
+		<p>받으신 상품을 평가해주세요.</p>
+		<div>
+			<form action="process.jsp">
+				<label for="name">이름</label>
+				<input type="text" id="name" name="name" placeholder="이름"><br>
+				<label for="email" >이메일</label>
+				<input type="text" id="email" name="email" placeholder="이메일"><br>
+				<label for="subject">상품 평</label>
+				<textarea name="subject" id="subject" placeholder="상품을 평가해주세요." 
+				style="height: 100px;"></textarea><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html>
+
+<!-- ===== input2.html ===== -->
+<html>
+	<head>
+		<style>
+			input[type=text], textarea{width: 90%; padding: 6px 10px;
+			margin: 10px 0; display: inline-block; 
+			border: 2px solid rgb(50,16,161); border-radius: 4px;}
+			input[type=text]:hover{background-color: bisque;}
+			input[type=submit]{background-color: #04AA6D;
+			border: none; color: white; padding: 16px 32px;}
+		</style>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<!-- ===== link1.html ===== -->
+<html>
+	<head>
+		<style>
+			a:link{color: red;}
+			a:visited{color: green;}
+			a:hover{color: blue;}
+			a:active{color: yellow;}
+		</style>
+	</head>
+	<body>
+		<p><a href="https://www.example.com" target="_blank">여기가 링크입니다.</a></p>
+	</body>
+</html>
+
+<!-- ===== link2.html ===== -->
+<html>
+	<head>
+		<style>
+			a.style1:link{color: #ff0000;}
+			a.style1:visited{color: #0000ff;}
+			a.style1:hover{font-size: 150%;}
+			a.style2:link{color: #ff0000;}
+			a.style2:visited{color: #0000ff;}
+			a.style2:hover{background:#66ff66 ;}
+		</style>
+	</head>
+	<body>
+		<p>마우스를 올려놓으면 스타일이 변경됩니다.</p>
+		<p><a class="style1" href="index.html" target="_blank">
+			폰트크기를 변경하는 링크</a></p>
+		<p><a class="style2" href="index.html" target="_blank">
+			배경색을 변경하는 링크</a></p>
+	</body>
+</html>
+
+<!-- ===== liststyle1.html ===== -->
+<html>
+	<head>
+		<style>
+			ul.a{list-style-type: circle;}
+			ul.b{list-style-type: disc;}
+			ul.c{list-style-type: square;}
+		</style>
+	</head>
+	<body>
+		<ul class="a">
+			<li>HTML5</li>
+			<li>CSS3</li>
+			<li>JAVASCRIPT</li>
+		</ul>
+		<ul class="b">
+			<li>HTML5</li>
+			<li>CSS3</li>
+			<li>JAVASCRIPT</li>
+		</ul>
+		<ul class="c">
+			<li>HTML5</li>
+			<li>CSS3</li>
+			<li>JAVASCRIPT</li>
+		</ul>
+	</body>
+</html>
+
+<!-- ===== liststyle2.html ===== -->
+<html>
+	<head>
+		<style>
+			ul{list-style: none;
+			text-align: center;
+			border-top: 1px solid red;
+			border-bottom: 1px solid red;
+			padding: 10px 0;}
+			ul li{display: inline;
+			text-transform: uppercase;
+			padding: 0 10px;
+			letter-spacing: 10px;}
+			ul li a{text-decoration: none;
+			color: black;}
+			ul li a:hover{text-decoration: underline;}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</body>
+</html>
+
+<!-- ===== margin_auto.html ===== -->
+<html>
+	<head>
+		<style>
+			p,h1{border: dotted 3px red;}
+		</style>
+	</head>
+	<body>
+		<p style="margin-left: auto; margin-right: auto; width: 50%;">
+			My Text
+		</p>
+	</body>
+</html>
+
+<!-- ===== margin_padding.html ===== -->
+<html>
+	<head>
+		<style>
+			body{margin: 0px; padding: 0px;}
+			p{margin: 0px; padding: 0px;
+			background-color: yellow;
+			border: 1px solid red;}
+			#target{margin: 10px; padding: 20px;
+			background-color: lightgreen;
+			border: 1px solid red;}
+		</style>
+	</head>
+	<body>
+		<p>margin:0px, padding:0px인 단락입니다.</p>
+		<p id="target">margin:10px, padding:20px인 단락입니다.</p>
+	</body>
+</html>
+
+<!-- ===== register.html ===== -->
+<html>
+	<head>
+
+	</head>
+	<body>
+		<div id="page-wrap">
+			<form method="post" action="process.jsp">
+				<fieldset>
+					<legend>회원정보입력</legend>
+					<label for="name">아이디</label>
+					<input type="text" name="name" id="text1"/>
+					<button>중복검사</button><br />
+					<label for="password1">패스워드</label>
+					<input type="password" name="password1"/><br />
+					<label for="password2">패스워드 확인</label>
+					<input type="password" name="password2"/><br />
+					<label for="name">이름</label>
+					<input type="text" name="name"/><br />
+					<label for="tel">전화번호</label>
+					<input type="tel" name="tel"/>				<br />
+					<label for="email">이메일</label>
+					<input type="email" name="email"/>				<br />
+					<label for="dob">생일</label>
+					<input type="date" name="dob"/>				<br />
+					<label for="url">홈페이지</label>
+					<input type="url" name="url"/>				<br />
+					<input type="radio" name="gender" value="Male">				남성<br>
+					<input type="radio" name="gender" value="Female">			여성<br>
+				</fieldset>
+				<input type="submit" name="submit" value="제출"/>
+				<input type="reset" name="reset" value="초기화"/>
+			</form>
+		</div>
+	</body>
+</html>
+
+<!-- ===== text_align.html ===== -->
+<html>
+	<head>
+		<style>
+			p,em,strong,div{border: dotted 3px red;}
+		</style>
+	</head>
+	<body>
+		<p style="text-align: center;"><em>my Team</em></p>
+	</body>
+</html>
+
+<!-- ===== transf3d.html ===== -->
+<html>
+	<head>
+		<style>
+			div{background-color: green; height: 150px; width: 150px;}
+			.container{background-color: yellow; border: 1px solid black;}
+			.transformed{backface-visibility: visible; transform-origin: 50% 42%;
+			transform: perspective(500px) rotate(59deg) rotateX(0deg);}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="transformed"></div>
+		</div>
+	</body>
+</html>

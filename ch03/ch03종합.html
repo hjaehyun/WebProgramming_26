@@ -1,0 +1,576 @@
+<!-- ===== buttonf.html ===== -->
+<html>
+
+    <body>
+    
+        <button type="button"><img src="dog.png"></button>
+        <button type="button"><img src="cat.png"></button>
+        <button type="button"><img src="bird.png"></button>
+
+    </body>
+
+</html>
+
+<!-- ===== buttonf1.html ===== -->
+<html>
+
+    <body>
+    
+        <input type="button" value="눌러보세요" onclick="alert('안녕하세요?')">
+
+    </body>
+
+</html>
+
+<!-- ===== color.html ===== -->
+<html>
+
+    <body>
+    
+        색상 선택: <input type="color" value="#FF00FF" name="color"/>
+
+    </body>
+
+</html>
+
+<!-- ===== datalist.html ===== -->
+<html>
+
+    <body>
+    
+        <p>선호하는 브라우저를 선택해주세요.</p>
+        <form action="process.jsp">
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="chrome"></option>
+                <option value="edge"></option>
+                <option value="opera"></option>
+                <option value="safari"></option>
+                <option value="firefox"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== date.html ===== -->
+<html>
+
+    <body>
+    
+        <h2>2023년 3월 1일 9시 정각을 입력해보세요.</h2>
+        <form>
+            date 타입<input type="date" value="2023-03-01"><br>
+            datetime-local 타입<input type="datetime-local"><br>
+            time 타입<input type="time"><br>
+            month 타입<input type="month"><br>
+            week 타입<input type="week">
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== div.html ===== -->
+<html>
+
+    <body>
+        <div style="border: 3px solid red;">
+            <h2>사자</h2>
+            <p>
+                사자는 아프리카에 살며 강한 다리와 턱, <span style="color: red;">긴 송곳니</span>를 지니고 있다.
+            </p>
+        </div>
+    </body>
+
+</html>
+
+<!-- ===== div2.html ===== -->
+<html>
+    <body>
+        <div style="height:20px; background-color:yellow"></div>
+        <div style="height:20px; background-color: green;"></div>
+        <div style="height:20px; background-color: purple;"></div>
+    </body>
+</html>
+
+<!-- ===== email.html ===== -->
+<html>
+
+    <body>
+    
+        이메일: <input type="email" name="email" required><br>
+
+    </body>
+
+</html>
+
+<!-- ===== fieldset.html ===== -->
+<html>
+
+    <body>
+    
+        <form>
+            <fieldset>
+                <legend>인적사항입력</legend>
+                이름:       <input type="text"><br>
+                전화번호:   <input type="text"><br>
+                주소:       <input type="text">
+            </fieldset>
+
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== fileupload.html ===== -->
+<html>
+
+    <body>
+    
+        <form enctype="multipart/form-data">
+            <input type="file" accept="image/jpg,image/gif">
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== formex1.html ===== -->
+<html>
+
+    <body>
+    
+        <h3>이메일 전송화면</h3>
+        <form action="MAILT0:hong1234@gmail.com" method="post" enctype="text/plain">
+            이름:
+            <input type="text" name="name" value=""><br>
+            이메일 주소: <input type="email" name="mail" value=""><br>
+            내용: <br>
+            <textarea name="comment" rows="5" cols="50"></textarea><br>
+            <input type="submit" value="Send" />
+            <input type="reset" value="reset" />
+
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== formex2.html ===== -->
+<html>
+
+    <body>
+    
+        <h3>회원 가입 화면</h3>
+        <form action="adduser.jsp" method="post">
+            <p>
+                이름: <input type="text" name="name"><br>   
+                주소: <input type="text" name="address"><br>
+                email:
+                <input type="email" name="email" required ><br>
+                <input type="radio" name="gender" value="Male">
+                Male<br>
+                <input type="radio" name="gender" value="Female">
+                Female<br>
+                <input type="submit" value="Send">
+                <input type="reset">
+            </p>
+
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== html5form.html ===== -->
+<html>
+
+    <body>
+    
+        <form>
+            date: <input type="date" /><br />
+            datetime: <input type="datetime" /><br />
+            datetime-local: <input type="datetime-local"/>
+            <br />
+            month: <input type="month" /><br />
+            time: <input type="time" ><br />
+            week: <input type="week"/><br />
+            color: <input type="color"/><br />
+            email: <input type="email"/><br />
+            tel: <input type="tel"/><br />
+            search: <input type="search"/><br />
+            range: <input type="range"/><br />
+            number: <input type="number"/><br />
+            url: <input type="url"/><br />
+            <input type="submit"/>
+
+
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== iframe.html ===== -->
+<HTML>
+    <body>
+        
+        <iframe src="inner.html" width="300" height="120"></iframe>
+
+    </body>
+</HTML>
+
+<!-- ===== iframe2.html ===== -->
+<html>
+
+    <body>
+        <iframe src="" name="iframe1"></iframe>
+        <p><a href="http://www.w3.org" target="iframe1">월드와이드웹 컨소시엄</a></p>
+
+        <p><b>참고:</b> 링크를 클릭하면 iframe 안에서 홈페이지가 열립니다.</p>
+        
+    </body>
+
+</html>
+
+<!-- ===== iframe3.html ===== -->
+<html>
+    <body>
+        <textarea rows="5" cols="y56">
+            &lt;html&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;This is a header. &lt;h1&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </textarea>
+
+        <br />
+        <br />
+        <iframe src="source.html" width="420" height="80"></iframe>
+
+    </body>
+</html>
+
+<!-- ===== inner.html ===== -->
+<html>
+    <head>
+        <title>INNER</title>
+    </head>
+
+    <body>
+        <h1>이 웹 페이지는 iframe 방식으로 표시됩니다.</h1>
+    </body>
+</html>
+
+<!-- ===== input1.html ===== -->
+<html>
+
+    <body>
+    
+        <form action="input.jps" method="post">
+            이메일: <input type="email" name="email" /><br />
+            URL:    <input type="url" name="url" /><br />
+            전화번호: <input type="tel" name="tel" /><br />
+            색상:   <input type="color" name="color" /><br />
+            월:   <input type="month" name="month" /><br />
+            날짜:   <input type="date" name="date" /><br />
+            주:     <input type="month" name="week" /><br />
+            시간:   <input type="time" name="time" /><br />
+            지역 시간: <input type="datetime-local" name="localdatetime" /><br />
+            숫자:   <input type="number" name="number" min="1" max="10" step="2"/><br />
+            범위:   <input type="range" name="range" min="1" max="10" step="2"/><br />
+            <input type="submit" value="제출" />
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== label.html ===== -->
+<html>
+
+    <body>
+    
+        <form action="proc_form.jsp">
+            <label for="male">남성</label>
+            <input type="radio" name="gender" id="male" value="male"><br>
+            <label for="female">여성</label>
+            <input type="radio" name="gender" id="female" value="female"><br>
+            <input type="submit" value="제출">
+
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== MiniProject.html ===== -->
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <header>
+            <h1> <img src="images/shop.png" width="50" height="50" /><a href="index.html">Web Shop</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">News</a></li>
+                <li><a href="index.html">My Account</a></li>
+                <li><a href="index.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <aside id="left">
+            <h4>카테고리</h4>
+            <ul>
+                <li><a target="iframe1" href="computer.htm">컴퓨터</a></li>
+                <li><a target="iframe1" href="clothing.html">의류</a></li>
+                <li><a target="iframe1" href="music.html">음악</a></li>
+                <li><a target="iframe1" href="movie.html">영화</a></li>
+                <li><a target="iframe1" href="computer.html">스포츠/레저</a></li>
+                <li><a target="iframe1" href="computer.html">가구/인테리어</a></li>
+                <li><a target="iframe1" href="computer.html">식품</a></li>
+            </ul>
+        </aside>
+        <section id="main">
+            <article id="article1">
+                <iframe name="iframe1" src="computer.html" width="440" height="300" seamless></iframe>
+            </article>
+        </section>
+    </body>
+
+</html>
+
+<!-- ===== number.html ===== -->
+<html>
+
+    <body>
+        <h2>신입부원들을 환영합니다. </h2>
+        이름: <input type="text"><br>
+
+        신발사이즈(230-290, 10단위)
+        <input type="number" min="230" max="290" spellcheck="10" value="260"><br>
+        
+        테니스 스킬(1부터10) <input type="range" min="1" max="10" value="1"><br>
+
+        <input type="submit"><input type="reset">
+
+    </body>
+
+</html>
+
+<!-- ===== radiof.html ===== -->
+<html>
+
+    <body>
+    
+        <h2>선호도 조사입니다.</h2>
+        <form>
+            성별:
+                <input type="radio" name="gender" value="male">남성
+                <input type="radio" name="gender" value="female">여성
+                과일 선택:
+                <input type="checkbox" name="fruits" value="apple" checked>사과
+                <input type="checkbox" name="fruits" value="grape">포도
+                <input type="checkbox" name="fruits" value="orange">오렌지
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== sbmit.html ===== -->
+<html>
+
+    <body>
+    
+        <form name="input" action="login.jsp" method="get">
+            아이디: <input type="text" name="user"><br />
+            패스워드: <input type="password" name="pass"><br />
+            <input type="submit" value="제출">
+            <input type="reset" value="초기화">
+
+        </form>
+
+
+    </body>
+
+</html>
+
+<!-- ===== select.html ===== -->
+<html>
+
+    <body>
+    
+        <form action="">
+            <select name="cars">
+                <option value="bmw">BMW</option>
+                <option value="benz">Benz</option>
+                <option value="hyundai" selected>현대자동차</option>
+                <option value="kia">기아자동차</option>
+            </select>
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== semantic1.html ===== -->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>시멘틱 태그의 사용</title>
+    </head>
+
+    <body>
+        <header>This is a Header.</header>
+        <nav>This is a Navigation Bar</nav>
+        <section>This is a Section</section>
+        <footer>This is a Footer.</footer>
+
+    </body>
+
+</html>
+
+<!-- ===== semantic2.html ===== -->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>시멘틱 태그의 사용</title>
+        <style>
+            html, body {height: 100%;}
+            header {background-color: yellow;}
+            nav {
+                float: left; width: 30%; height: 70%; background: green;
+            }
+            section { 
+                float: left; width: 70%; height: 70%; background-color: olive;
+            }
+            footer {background-color: rgb(125,125,194);}
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <header>This is a Header</header>
+        <nav>This is a Navigation Bar</nav>
+        <section>This is a Section</section>
+        <footer>This is a Footer</footer>
+
+    </body>
+
+</html>
+
+<!-- ===== Semantic2_1.html ===== -->
+<html>
+
+    <head>  <meta charset="utf-8">  </head>
+
+    <body>
+    
+        <form action="input.jsp" method="post">
+            아이디: &nbsp;  <input type="text" size="15" value=""><br>
+            비밀번호: <input type="password" size="15" value=""><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== semantic3.html ===== -->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>시멘틱 태그의 사용</title>
+    </head>
+
+    <body>
+
+        <header>
+        <h1>HTML, CSS, JAVASCRIPT를 이용한 웹 페이지의 작성</h1>
+        <p>HTML5를 사용하여 웹 페이지 작성하는 방법을 학습합니다.</p>
+        </header>
+
+        <nav>
+            <h2>목차</h2>
+            <ul>
+                <li><a href="#html"> HTML5 </a></li>
+                <li><a href="#css"></a> CSS3 </li>
+                <li><a href="#js"></a> JAVASCRIPT </li>
+            </ul>
+        </nav>
+
+        <section>
+            <article id="CSS">
+                <h2>CSS3</h2>
+                <p>CSS을 이용하여 문서의 스타일을 기술합니다. </p>
+            </article>
+            <article id="js">
+                <h2>JAVASCRIPT</h2>
+                <p>JAVASCRIPT을 이용하여 문서의 동작을 기술합니다.</p>
+            </article>
+        </section>
+
+        <footer>
+            <p>Author: 홍길동 <a href="milto:hong@example.com">hong@example.com</a></p>
+        </footer>
+
+    </body>
+
+</html>
+
+<!-- ===== tel.html ===== -->
+<html>
+
+    <body>
+        <form>
+            전화번호: 
+            <input type="tel" name="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" 
+            title="####-####-####"><br>
+            <input type="submit" />
+        </form>
+    </body>
+
+</html>
+
+<!-- ===== textf.html ===== -->
+<html>
+
+    <body>
+
+        <h2>고객의 소리</h2>
+        <form name="input" action="getfeedback.jsp" method="get">
+            아이디: <input type="text" name="name"><br>
+            구매번호: <input type="text" name="number" size="10"><br>
+            패스워드: <input type="password" name="pass"><br>
+            제품을 평가해 주세요.<br />
+            <textarea name="feedback" rows="5" cols="50">
+            </textarea>
+
+        </form>
+
+    </body>
+
+</html>
+
+<!-- ===== url.html ===== -->
+<html>
+
+    <body>
+        URL: <input type="url" name="url" required><br>
+    </body>
+
+</html>
