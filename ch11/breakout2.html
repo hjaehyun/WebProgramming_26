@@ -1,0 +1,50 @@
+<body>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+    <script>
+        let paddle = {
+            height:10,
+            width:90,
+            x:300,
+            draw:function () {
+                context.beginPath();
+                context.rect(this.x, canvas.height - this.height, this.width, this.height);
+                context.fillStyle = "blue";
+                context.fill();
+                context.closePath();
+            }
+        };
+
+        function init() {
+            document.addEventListener("mousemove", mouseHandler, false);
+        }
+        function mouseHandler(e) {
+            let x = e.clientX - canvas.offsetLeft;
+            if (x > 0 && x < canvas.width) {
+                paddle.x = x - paddle.width / 2;
+            }
+        }
+        function gameLoop() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            ball.draw();
+            paddle.draw();
+            if (ball.x + ball.dx > canvas.width - ball.radius
+                || ball.x + ball.dx < ball.radius) {
+                ball.dx = -ball.dx;
+            }
+            if (ball.y + ball.dy < ball.radius) {
+                ball.dy = -ball.dy;
+            }
+            else if (ball.y + ball.dy > canvas.height - ball.radius) {
+                if (ball.x > paddle.x && ball.x < paddle.x + paddle.width) {
+                    ball.dy = -ball.dy;
+                }
+                else {
+                    clearInterval(interval);
+                }
+            }
+            ball.x += ball.dx;
+            ball.y += ball.dy;
+        }
+        init();
+        setInterval(gameLoop, 10);
+    </script>

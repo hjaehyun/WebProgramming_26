@@ -1,0 +1,15 @@
+<haed>
+    <script>
+        function OnMouseIn(elem){
+            elem.style.border = "2px solid red";
+        }
+        function OnMouseOut(elem){
+            elem.style.border ="";
+        }
+    </script>
+</haed>
+<body>
+    <div style="background-color: yellow; width: 200px;" 
+        onmouseover="OnMouseIn(this)" onmouseout="OnMouseOut(this)">
+        마우스 커서를 이 요소 위에 이동하세요.</div>
+</body>

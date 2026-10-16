@@ -1,0 +1,20 @@
+<head>
+    <script>
+        function getValue(){
+            let list = document.getElementByName('color');
+            for (let i =0;i<list.length;i++){
+                if(list[i].checked){
+                    document.getElementById("result").value = list[i].vlaue;
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="radio" name="color" CHECKED value="red">RED<br>
+    <input type="radio" name="color" value="blue">BLUE<br>
+    <input type="radio" name="color" value="green">GREEN<br>
+    <input type="button" onclick="getValue();" value="클릭">
+    <input type="text" id="resul" value="">
+</body>

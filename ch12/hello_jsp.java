@@ -1,0 +1,11 @@
+out.write("<html>\r\n");
+out.write("<head>\r\n");
+out.write("<title>Hello World</title>\r\n");
+out.write("</hea>\r\n");
+out.write("<body>\r\n");
+out.write("안녕하세요? 현재시각은");
+java.util.Date date= new java.util.Date();
+out.println(date);
+out.write("입니다.\r\n");
+out.write("</body>\r\n");
+out.write("</html>\r\n");

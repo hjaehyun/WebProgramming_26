@@ -1,0 +1,9 @@
+<body>
+    <P>첫번째 p 요소</P>
+    <P>두번쨰 P 요소</P>
+    <P id="special"></P>
+    <script>
+        let eleArray = document.getElementByTagName("p");
+        document.getElementById("special").innerHTML='eleArray[0]: '+ eleArray[0].innerHTML;
+    </script>
+</body>

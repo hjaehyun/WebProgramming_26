@@ -1,0 +1,9 @@
+    <script>
+        let canvas = document.getElementById('myCanvas');
+        let context = canvas.getContext('2d');
+
+        context.beginPath();
+        context.moveTo(90, 130);
+        context.bezierCurveTo(140, 10, 288, 10, 288, 130);
+        context.stroke();
+    </script>
